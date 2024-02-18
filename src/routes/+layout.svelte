@@ -1,4 +1,8 @@
-<div>
+<script>
+    export const prerender = true;
+</script>
+
+<div class="container">
 
     <nav>
         <a href="/">
@@ -7,7 +11,12 @@
             </span>
         </a>
         <span class="small">
-            a quirky blog about boxing, programming, and destiny 2
+            <div>
+                a quirky blog about boxing, programming, and destiny 2
+            </div>
+            <div>
+                they all have one thing in common
+            </div>
         </span>
     </nav>
 
@@ -19,7 +28,7 @@
         
     </div>
 
-    <div>
+    <div>  
         footer
     </div>
     
@@ -29,9 +38,17 @@
 
 
 <style>
+
+
+    .container{
+        margin-left: 10%;
+        margin-right: 10%;        
+    }
     nav {
         display: flex;
         flex-direction: row;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 
     nav > span {
@@ -41,6 +58,7 @@
     nav > .small {
         font-size: 1rem;
         align-self:flex-end;
+        margin-left: 50px;
     }
 
     nav > ul {
@@ -53,5 +71,11 @@
 
     a {
         text-decoration: none;
+    }
+
+    :global(body) {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 </style>
