@@ -1,6 +1,3 @@
-<script>
-    export const prerender = true;
-</script>
 
 <div class="container">
 
