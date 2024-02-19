@@ -35,7 +35,7 @@ export interface Pagination {
 	total: number;
 }
 
-export async function load() {
+export async function load(): Promise<{ data: Attributes[] }> {
 	const req = await fetch('https://strapi.moodyrahman.com/api/blogposts', {
 		headers: { Authorization: `bearer ${STRAPI_TOKEN}` }
 	});
@@ -46,22 +46,6 @@ export async function load() {
 	console.log(JSON.stringify(data, null, 2));
 
 	return {
-		data: [
-			{
-				title: 'moody',
-				content: 'lalala',
-				slug: 1
-			},
-			{
-				title: 'moody',
-				content: 'lalala',
-				slug: 2
-			},
-			{
-				title: 'moody',
-				content: 'lalala',
-				slug: 3
-			}
-		]
+		data: data
 	};
 }
