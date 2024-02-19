@@ -4,7 +4,7 @@
     <nav>
         <a href="/">
             <span class="highlight">
-                    my head hurts
+                    moody's head hurts
             </span>
         </a>
         <span class="small">
