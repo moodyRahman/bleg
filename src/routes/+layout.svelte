@@ -9,7 +9,7 @@
         </a>
         <span class="small">
             <div>
-                a quirky blog about boxing, programming, and destiny 2
+                a stream-of-conscious blog about boxing, programming, and destiny 2
             </div>
             <div>
                 they all have one thing in common
@@ -17,18 +17,18 @@
         </span>
     </nav>
 
-    <div>
+    <div class="slot">
 
         <slot>
             
         </slot>
         
     </div>
-
+<!-- 
     <div>  
         footer
     </div>
-    
+     -->
 </div>
 
 
@@ -46,6 +46,11 @@
         flex-direction: row;
         margin-bottom: 5%;
         margin-top: 5%;
+    }
+
+    .slot {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     nav > span {
