@@ -42,7 +42,9 @@ export async function load(): Promise<{ data: Attributes[] }> {
 
 	const raw_data: StrapiRequest = await req.json();
 
-	const data = raw_data.data.map((x) => x.attributes);
+	const data = raw_data.data
+		.map((x) => x.attributes)
+		.sort((x, y) => (x.createdAt < y.createdAt ? 1 : -1));
 	console.log(JSON.stringify(data, null, 2));
 
 	return {
