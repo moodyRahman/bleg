@@ -1,12 +1,17 @@
 
 <script lang="ts">
     	export let data;
+
+        const posts = data.data
 </script>
+<pre>
 
-
-{#each data.data as x}
-    <a href={x.slug}>
-        here is a link to {x.title}  <br>
+    {JSON.stringify(posts, null, 2)}
+    
+</pre>
+{#each posts as post}
+    <a href={post.slug}>
+        {post.title}  <br>
     </a>
 {/each}
 
