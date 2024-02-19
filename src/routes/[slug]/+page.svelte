@@ -33,8 +33,4 @@
     p {
         margin-top: 5%;
     }
-
-    .title {
-
-    }
 </style>
