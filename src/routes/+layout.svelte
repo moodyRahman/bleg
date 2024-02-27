@@ -1,11 +1,19 @@
 
+<svelte:head>
+
+    <link rel="icon" type="image/x-icon" href="https://moodyrahman.com/files/icon.png">
+<title>
+    mhh: blog
+</title>
+
+</svelte:head>
+
 <div class="container">
 
+
     <nav>
-        <a href="/">
-            <span class="highlight">
-                    moody's head hurts
-            </span>
+        <a href="/" class="highlight">
+            moody's head hurts
         </a>
         <span class="small">
             <div>
@@ -26,14 +34,22 @@
     </div>
 
     <div class="footer">
-        <div>
-            <a href="https://moodyrahman.com">
-                a moody rahman project
-            </a>
-        </div>
+        <a href="https://moodyrahman.com">
+            a moody rahman project
+        </a>
+        <a href="https://webring.hackny.org">
+            <span>
+                web
+            </span>
+            <img src="https://webring.hackny.org/logo.png" alt="webring" width="40" height="40" />
+            <span>
+                ring
+            </span>
+        </a>
         <div> 
             copyrights... 2024?
         </div>
+
     </div>
 </div>
 
@@ -41,6 +57,22 @@
 
 
 <style>
+
+
+
+    .webring > a {
+        display: flex;
+    }
+
+    a:hover {
+        background-color: #5f76a1;
+    }
+    .footer > * {
+        width: fit-content;
+        background: #34425c;
+    	color: #cdcdc2;
+        margin-bottom: 5px;
+    }
 
     .container{
         margin-left: 10%;
@@ -60,6 +92,11 @@
         text-align: center;
         padding: 10px;
         margin-top: 10%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .slot {
