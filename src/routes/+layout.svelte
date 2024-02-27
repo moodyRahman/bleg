@@ -37,7 +37,7 @@
         <a href="https://moodyrahman.com">
             a moody rahman project
         </a>
-        <a href="https://webring.hackny.org">
+        <a href="https://webring.hackny.org" class="webring">
             <span>
                 web
             </span>
@@ -60,7 +60,7 @@
 
 
 
-    .webring > a {
+    .webring{
         display: flex;
     }
 
