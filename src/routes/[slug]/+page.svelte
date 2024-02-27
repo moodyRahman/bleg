@@ -1,6 +1,7 @@
 <script lang="ts">
     import SvelteMarkdown from 'svelte-markdown'
     import Paragraph from '$lib/markdown/Paragraph.svelte';
+	import Image from '$lib/markdown/Image.svelte';
     
     export let data;
 
@@ -17,7 +18,11 @@
 </small>
 
 <p>
-    <SvelteMarkdown source={post?.content} renderers={{paragraph: Paragraph}} />
+    <SvelteMarkdown source={post?.content} 
+    renderers={{
+        paragraph: Paragraph,
+        image: Image
+    }} />
 </p>
 
 
@@ -28,7 +33,7 @@
     h3 {
         margin: 0;
     }
-    
+
     small {
         margin-top: 2%;
         font-size: 1rem;
