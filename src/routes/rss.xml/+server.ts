@@ -37,18 +37,6 @@ export async function GET({ fetch }) {
 					)
 					.join('\n')}
 
-        <item>
-            <title>RSS Tutorial</title>
-            <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-            <description>New RSS tutorial on W3Schools</description>
-        </item>
-
-        <item>
-            <title>XML Tutorial</title>
-            <link>https://www.w3schools.com/xml</link>
-            <description>New XML tutorial on W3Schools</description>
-        </item>
-
         </channel>
         </rss> `.trim(),
 		{
