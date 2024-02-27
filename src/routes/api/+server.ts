@@ -1,35 +1,5 @@
 import { STRAPI_TOKEN } from '$env/static/private';
-
-export interface StrapiRequest {
-	data: Datum[];
-	meta: Meta;
-}
-
-export interface Datum {
-	id: number;
-	attributes: Attributes;
-}
-
-export interface Attributes {
-	title: string;
-	slug: string;
-	content: string;
-	createdAt: string;
-	updatedAt: string;
-	publishedAt: string;
-	tags: string[];
-}
-
-export interface Meta {
-	pagination: Pagination;
-}
-
-export interface Pagination {
-	page: number;
-	pageSize: number;
-	pageCount: number;
-	total: number;
-}
+import { type StrapiRequest } from '../../ambient';
 
 export async function GET() {
 	const req = await fetch('https://strapi.moodyrahman.com/api/blogposts', {

@@ -1,6 +1,13 @@
 
 
-export async function GET() {
+export async function GET({ fetch }) {
+
+    const req = await fetch("/api")
+    const raw_data = await req.json()
+    const posts = raw_data.data
+
+    console.log(posts)
+
     return new Response(
         `
 		<?xml version="1.0" encoding="UTF-8" ?>
