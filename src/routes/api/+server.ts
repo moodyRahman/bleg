@@ -1,5 +1,5 @@
 import { STRAPI_TOKEN } from '$env/static/private';
-import { type StrapiRequest } from '../../ambient';
+import { type StrapiRequest } from '$lib/ambient';
 
 export async function GET() {
 	const req = await fetch('https://strapi.moodyrahman.com/api/blogposts', {
