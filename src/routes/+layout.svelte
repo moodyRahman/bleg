@@ -32,7 +32,7 @@
             </a>
         </div>
         <div> 
-            no copyrights
+            copyrights... 2024?
         </div>
     </div>
 </div>

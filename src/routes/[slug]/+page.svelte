@@ -2,6 +2,9 @@
     import SvelteMarkdown from 'svelte-markdown'
     import Paragraph from '$lib/markdown/Paragraph.svelte';
 	import Image from '$lib/markdown/Image.svelte';
+	import BlockQuote from '$lib/markdown/BlockQuote.svelte';
+	import Code from '$lib/markdown/Code.svelte';
+	import CodeSpan from '$lib/markdown/CodeSpan.svelte';
     
     export let data;
 
@@ -21,7 +24,10 @@
     <SvelteMarkdown source={post?.content} 
     renderers={{
         paragraph: Paragraph,
-        image: Image
+        image: Image,
+        blockquote: BlockQuote,
+        code: Code,
+        codespan: CodeSpan
     }} />
 </p>
 
@@ -37,6 +43,10 @@
     small {
         margin-top: 2%;
         font-size: 1rem;
+    }
+
+    p {
+        margin-top: 40px;
     }
 
 </style>
