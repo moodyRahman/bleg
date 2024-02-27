@@ -2,7 +2,7 @@
     import SvelteMarkdown from 'svelte-markdown'
     export let data;
 
-    const post = data.data?.find((x) => x.slug === data.slug)
+    const post = data.posts?.find((x) => x.slug === data.slug)
     const date = new Date(post?.createdAt!)
 </script>
 

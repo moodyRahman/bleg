@@ -2,8 +2,7 @@
 <script lang="ts">
     	export let data;
 
-        const posts = data.data
-
+        const posts = data.posts
         const generateDateString = (timestamp: string) => {
             const z = new Date(timestamp)
 

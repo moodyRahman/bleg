@@ -24,11 +24,12 @@
         </slot>
         
     </div>
-<!-- 
-    <div>  
-        footer
+
+    <div class="footer">
+        <a href="https://moodyrahman.com">
+            a moody rahman project
+        </a>
     </div>
-     -->
 </div>
 
 
@@ -45,6 +46,16 @@
         flex-direction: row;
         margin-bottom: 5%;
         margin-top: 5%;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0,0,0,0.1);
+        padding: 10px;
     }
 
     .slot {
