@@ -26,9 +26,14 @@
     </div>
 
     <div class="footer">
-        <a href="https://moodyrahman.com">
-            a moody rahman project
-        </a>
+        <div>
+            <a href="https://moodyrahman.com">
+                a moody rahman project
+            </a>
+        </div>
+        <div> 
+            no copyrights
+        </div>
     </div>
 </div>
 
@@ -39,7 +44,10 @@
 
     .container{
         margin-left: 10%;
-        margin-right: 10%;        
+        margin-right: 10%;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
     }
     nav {
         display: flex;
@@ -49,16 +57,13 @@
     }
 
     .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
         text-align: center;
-        background-color: rgba(0,0,0,0.1);
         padding: 10px;
+        margin-top: 10%;
     }
 
     .slot {
+        flex: 1;
         margin-left: 5%;
         margin-right: 5%;
     }
