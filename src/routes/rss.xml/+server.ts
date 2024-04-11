@@ -46,8 +46,8 @@ export async function GET({ fetch }) {
                 <link>https://bleg.moodyrahman.com/${x.slug}</link>
 				<guid>https://bleg.moodyrahman.com/${x.slug}</guid>
 				<description>${x.content.substring(0, 150)}...</description>
-				<author> moody </author>
-				<pubDate>${x.publishedAt}</pubDate>
+				<author>moody.byte@gmail.com</author>
+				<pubDate>${new Date(x.publishedAt).toUTCString()}</pubDate>
             </item>
         `
 					)
