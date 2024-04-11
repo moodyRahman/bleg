@@ -44,9 +44,10 @@ export async function GET({ fetch }) {
             <item>
                 <title>${x.title}</title>
                 <link>https://bleg.moodyrahman.com/${x.slug}</link>
-                <description>${x.publishedAt}</description>
 				<guid>https://bleg.moodyrahman.com/${x.slug}</guid>
 				<description>${x.content.substring(0, 150)}...</description>
+				<author> moody </author>
+				<pubDate>${x.publishedAt}</pubDate>
             </item>
         `
 					)
