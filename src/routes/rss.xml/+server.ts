@@ -31,9 +31,10 @@ export async function GET({ fetch }) {
 	return new Response(
 		`
         <?xml version="1.0" encoding="UTF-8" ?>
-        <rss version="2.0">
+        <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
         <channel>
+		<atom:link href="https://bleg.moodyrahman.com/rss.xml" rel="self" type="application/rss+xml" />
         <title>moody's head hurts</title>
         <link>https://bleg.moodyrahman.com/</link>
         <description>moody's stream of conscious, coming to you hot in fresh in under 30 minutes</description>
@@ -46,7 +47,7 @@ export async function GET({ fetch }) {
                 <link>https://bleg.moodyrahman.com/${x.slug}</link>
 				<guid>https://bleg.moodyrahman.com/${x.slug}</guid>
 				<description>${x.content.substring(0, 150)}...</description>
-				<author>moody.byte@gmail.com</author>
+				<author>moody.byte@gmail.com (Moody Rahman)</author>
 				<pubDate>${new Date(x.publishedAt).toUTCString()}</pubDate>
             </item>
         `
